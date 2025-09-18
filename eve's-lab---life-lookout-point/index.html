@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" style="scroll-behavior: smooth;">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eve's Lab - 生涯諮詢</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Add a custom font from Google Fonts for better typography */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+    /* Offset for sticky header when scrolling to anchors */
+    section[id] {
+      scroll-margin-top: 5rem; /* Adjust this value based on your header's height */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "vite": "https://aistudiocdn.com/vite@^7.1.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-stone-50">
+  <div id="root"></div>
+  <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
